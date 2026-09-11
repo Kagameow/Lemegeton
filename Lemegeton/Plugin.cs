@@ -1694,7 +1694,7 @@ namespace Lemegeton
                         if (ImGui.Selectable(estr, String.Compare(signtr, estr) == 0) == true)
                         {
                             AutomarkerSigns.SignEnum newsign = (AutomarkerSigns.SignEnum)Enum.Parse(typeof(AutomarkerSigns.SignEnum), name);
-                            ams.SetRole(kp.Key, newsign);
+                            ams.SetRole(kp.Key, newsign, cm is not Automarker { SelfMarkOnly: true });
                         }
                     }
                     ImGui.EndCombo();
