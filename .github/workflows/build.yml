@@ -38,5 +38,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Lemegeton
-          path: .\Lemegeton\bin\x64\Release\Lemegeton\*
+          path: .\Lemegeton\bin\Release (Full)\*
           if-no-files-found: error
